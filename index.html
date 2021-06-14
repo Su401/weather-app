@@ -17,12 +17,12 @@
   <div class="container">
      <header>
        <div class="row">
-        <div class="col-3">
-          <h1>
-            City Name
+        <div class="col-5">
+          <h1 id="current-location">
+            Porto
           </h1>
         </div>
-        <div class="col-9">
+        <div class="col-7">
           <form id="search-form" class="mp-3">
             <div class="row">
               <div class="col-9">
@@ -38,14 +38,92 @@
                 type="submit" 
                 value="Search" 
                 class="btn btn-primary w-100" />
-              </div>          
+              </div>        
             </div>  
         </div>
      </header>
-<small>
-  Open-source code by <a href="https://github.com/Su401/weather-app.git"> Susana Silva</a>
-</small>
-  </div>
+     <section>
+       <div class="row">
+         <div class="col-8">
+           <div class="current">
+              <h3 id="current-time">
+               Monday 00:00
+              </h3>
+              <br/>
+              <h2>
+                <span class="temperature">
+                  <img src="img/sunny.png" alt="sun" width="75px" />
+                  &nbsp
+                  <span id="temp">
+                    12
+                  </span>
+                  <span class="units">
+                    <a href="#" id="celsius">
+                      ºC
+                    </a>
+                    |
+                    <a href="#" id="fsmth">
+                      ºF
+                    </a>
+                  </span>
+                </span>
+              </h2>
+              <br/>
+              <h4>
+                Humidity: <span id="humidity">61</span>%
+                <br />
+                Wind: <span id="wind">18</span>km/h
+              </h4>
+            </div>
+         </div>
+         <div class="col-4">
+          <ul>
+            <li>
+              <span>Mon</span>
+              &nbsp
+              <img src="img/sunny.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>18ºC</strong>
+            </li>
+            <li>
+              <span>Thu</span>
+              &nbsp
+              <img src="img/sunny.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>17ºC</strong>
+            </li>
+            <li>
+              <span>Wed</span>
+              &nbsp
+              <img src="img/cloudy.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>15ºC</strong>
+            </li>
+            <li>
+              <span>Tue</span>
+              &nbsp
+              <img src="img/cloudy.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>15ºC</strong>
+            </li>
+            <li>
+              <span>Fri</span>
+              &nbsp
+              <img src="img/cloudy.png" alt="sun" width="40px" />
+              &nbsp
+              <strong>16ºC</strong>
+            </li>
+          </ul>
+         </div>
+       </div>
+     </section>
+<footer>
+  <small>
+    <a href="https://github.com/Su401/weather-app.git">Open-source code</a>
+    by Susana Silva
+  </small>
+</footer>
+</div>
 
   <script src="src/app.js"> </script>
 </body>
