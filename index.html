@@ -14,6 +14,39 @@
   <title>Weather App</title>
 </head>
 <body>
+  <div class="container">
+     <header>
+       <div class="row">
+        <div class="col-3">
+          <h1>
+            City Name
+          </h1>
+        </div>
+        <div class="col-9">
+          <form id="search-form" class="mp-3">
+            <div class="row">
+              <div class="col-9">
+                <input 
+                type="search" 
+                placeholder="Search city" 
+                class="form-control" 
+                id="city-input" 
+                autocomplete="off" />
+              </div>
+              <div class="col-3">
+                <input 
+                type="submit" 
+                value="Search" 
+                class="btn btn-primary w-100" />
+              </div>          
+            </div>  
+        </div>
+     </header>
+<small>
+  Open-source code by <a href="https://github.com/Su401/weather-app.git"> Susana Silva</a>
+</small>
+  </div>
+
   <script src="src/app.js"> </script>
 </body>
 </html>
