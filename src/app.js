@@ -45,9 +45,21 @@ function cityWeather(response){
       response.data.weather[0].description);
   }
   
+function search(city) {
+  let apiKey = "6bf9818d9ac6ad65c210c2c0a7205a25";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(cityWeather);
+
+}
+
+  function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+  console.log(cityInputElement.value);
+}
  
- let apiKey = "6bf9818d9ac6ad65c210c2c0a7205a25";
- let units = "metric";
- let city = "porto"
- let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
- axios.get(apiUrl).then(cityWeather);
+
+ let form = document.querySelector("#search-form");
+ form.addEventListener("submit", handleSubmit);
