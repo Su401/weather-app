@@ -90,3 +90,5 @@ fahrenheitLink.addEventListener("click", convertFsmth);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
+
+search("porto");
