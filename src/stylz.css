@@ -31,6 +31,7 @@ ul{
   font-weight: 300;
   font-size: 20px;
   padding: 0;
+  text-align: center;
 }
 
 a {
@@ -95,4 +96,12 @@ footer {
   font-size: 17px;
   position: relative;
   top: -32px;
+}
+
+.weather-forecast-day {
+  font-weight: bold;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
